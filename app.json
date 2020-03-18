@@ -1,0 +1,32 @@
+{
+  "name": "Discord",
+  "description": "Discord Music Bot",
+  "keywords": [
+    "discord",
+    "discord"
+  ],
+  "repository": "https://github.com/Qusaiiii/clone",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "NTcyNTUwNTAzOTQ3NDM2MDMy.XMd7Wg.YEdSNBCCDmAfredr6eGn-No3twE",
+      "required": true
+    },
+        "AUTHOR_ID": {
+      "description": "302836004237344779",
+      "required": true
+},
+"PREFIX": {
+      "description": "=",
+      "required": true
+    }
+
+},
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ]
+}
