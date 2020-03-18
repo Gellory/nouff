@@ -15,8 +15,6 @@ const prefix = 'L'
 
 
     client.on('ready', () => {
-    var sg = client.channels.get("578888052362182666");
-    if (sg) sg.join();
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setStatus("dnd");
     client.user.setActivity("SILENT ",{type: 'WATCHING'});
@@ -27,7 +25,7 @@ client.on('message', async message => {
  if (!message.content.startsWith(adminprefixs)) return; 
  if(message.content.startsWith(adminprefixs + 'bc')) {
  if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
-      let guilsk = client.users.get('471555985262116864', '457990580249690123')
+      let guilsk = client.users.get('471555985262116864', '582723225834881024')
       if(!guilsk) return message.channel.send(' ** ♔ |  lost angel powers only ** ');
 
      const args = message.content.split(" ").slice(1).join(" ")
