@@ -20,6 +20,7 @@ const prefix = 'L'
     client.user.setActivity("SILENT ",{type: 'WATCHING'});
     
 });
+/*
 client.on('message', async message => { 
    const adminprefixs = "+"   
  if (!message.content.startsWith(adminprefixs)) return; 
@@ -124,7 +125,7 @@ let filter = m => m.author.id === message.author.id;
                .addField('📜Message📜', `${msge}`)
                .setThumbnail('https://a.top4top.net/p_1008gqyyd1.png')
                .setFooter(client.user.username, client.user.avatarURL);
-               m.send({ embed: bc })
+               m.send(bc)
                m.send(`${m}`)
                
            })
@@ -140,7 +141,7 @@ let filter = m => m.author.id === message.author.id;
                .addField('📜Message📜', `${msge}`)
                .setThumbnail('https://a.top4top.net/p_1008gqyyd1.png')
                .setFooter(client.user.username, client.user.avatarURL);
-               m.send({ embed: bc })
+               m.send(bc)
                
            })
        }
@@ -225,7 +226,7 @@ let filter = m => m.author.id === message.author.id;
              .addField('📜Message📜', `${msge}`)
              .setThumbnail('https://a.top4top.net/p_1008gqyyd1.png')
              .setFooter(client.user.username, client.user.avatarURL);
-             m.send({ embed: bc })
+             m.send(bc)
              m.send(`${m}`)
              
          })
@@ -241,7 +242,7 @@ let filter = m => m.author.id === message.author.id;
              .addField('📜Message📜', `${msge}`)
              .setThumbnail('https://a.top4top.net/p_1008gqyyd1.png')
              .setFooter(client.user.username, client.user.avatarURL);
-             m.send({ embed: bc })
+             m.send(bc)
              
          })
      }
@@ -405,7 +406,7 @@ let filter = m => m.author.id === message.author.id;
              .addField('📜Message📜', `${msge}`)
              .setThumbnail('https://a.top4top.net/p_1008gqyyd1.png')
              .setFooter(client.user.username, client.user.avatarURL);
-             m.send({ embed: bc })
+             m.send(bc)
      m.send(`${m}`)      
              
          })
@@ -421,7 +422,7 @@ let filter = m => m.author.id === message.author.id;
              .addField('📜Message📜', `${msge}`)
              .setThumbnail('https://a.top4top.net/p_1008gqyyd1.png')
              .setFooter(client.user.username, client.user.avatarURL);
-             m.send({ embed: bc })
+             m.send(bc)
              
                      
          })}
