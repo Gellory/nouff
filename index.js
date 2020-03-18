@@ -9,7 +9,7 @@ const dateFormat = require('dateformat');
 const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 const queue = new Map();
 const client = new Discord.Client();
-const prefix = 'L'
+const prefix = '+'
 
 
 
@@ -20,6 +20,7 @@ const prefix = 'L'
     client.user.setActivity("SILENT ",{type: 'WATCHING'});
     
 });
+/*
 client.on('message', async message => { 
    const adminprefixs = "+"   
  if (!message.content.startsWith(adminprefixs)) return; 
@@ -451,5 +452,28 @@ let filter = m => m.author.id === message.author.id;
 
 
 	    
+*/
 
+client.on('message', message => {
+    if (message.author.id === client.user.id) return;
+    if (message.guild) {
+   let embed = new Discord.RichEmbed()
+    let args = message.content.split(' ').slice(1).join(' ');
+if(message.content.split(' ')[0] == prefix + 'bc1') {
+    if (!args[1]) {
+return;
+}
+        message.guild.members.forEach(m => {
+   if(!message.member.hasPermission('ADMINISTRATOR')) return;
+            var bc = new Discord.RichEmbed()
+            .addField(' » الرسالة : ', args)
+            .setColor('#ff0000')
+            // m.send(`[${m}]`);
+            m.send(`${m}`,{embed: bc});
+        });
+    }
+    } else {
+        return;
+    }
+});
 client.login(process.env.BOT_TOKEN);
