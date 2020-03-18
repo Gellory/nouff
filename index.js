@@ -17,7 +17,7 @@ const prefix = '+'
     client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setStatus("dnd");
-    client.user.setActivity("SILENT ",{type: 'WATCHING'});
+    client.user.setActivity("lost angel ",{type: 'WATCHING'});
     
 });
 /*
@@ -459,7 +459,9 @@ client.on('message', message => {
     if (message.guild) {
    let embed = new Discord.RichEmbed()
     let args = message.content.split(' ').slice(1).join(' ');
-if(message.content.split(' ')[0] == prefix + 'bc1') {
+if(message.content.split(' ')[0] == prefix + 'bc') {
+	      let guilsk = client.users.get('471555985262116864', '582723225834881024')
+      if(!guilsk) return message.channel.send(' ** ♔ |  lost angel powers only ** ');
     if (!args[1]) {
 return;
 }
