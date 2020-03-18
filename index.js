@@ -37,45 +37,45 @@ let filter = m => m.author.id === message.author.id;
      .setTitle(`${client.user.username}`)
      .setDescription(`
      -=-=-=-=-=-=-=-=-=-= **
-     ➊ لأرسال برودكاست الى رول معين بدون امبيد
+     🍑 لأرسال برودكاست الى رول معين بدون امبيد
      
-     ➋ لأرسال برودكاست الى رول معين مع امبيد
+     ⛽ لأرسال برودكاست الى رول معين مع امبيد
      
-     ➌ لأرسال برودكاست لجميع الاعضاء مع امبيد
+     🍚 لأرسال برودكاست لجميع الاعضاء مع امبيد
      
-     ➍ لأرسال برودكاست لجميع الاعضاء بدون امبيد
+     🐰 لأرسال برودكاست لجميع الاعضاء بدون امبيد
      
-     ➎ لأرسال برودكاست للمتواجدين اونلاين بدون امبيد
+     🎁 لأرسال برودكاست للمتواجدين اونلاين بدون امبيد
      
-     ➏ لأرسال برودكاست للمتواجدين اونلاين مع امبيد
+     💎 لأرسال برودكاست للمتواجدين اونلاين مع امبيد
      
      ❌ لألغاء العملية بالكامل **
      -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
      `)
      
      message.channel.sendEmbed(recembed).then(msg => {
-         msg.react('➊')
-         .then(() => msg.react('➋'))
-         .then(() => msg.react('➌'))
-         .then(() =>  msg.react('➍'))
-         .then(() => msg.react('➎'))
-         .then(() => msg.react('➏'))
+         msg.react('🍑')
+         .then(() => msg.react('⛽'))
+         .then(() => msg.react('🍚'))
+         .then(() =>  msg.react('🐰'))
+         .then(() => msg.react('🎁'))
+         .then(() => msg.react('💎'))
          .then(() => msg.react('❌'))
      
      
-                 let embedmsgFilter = (reaction, user) => reaction.emoji.name === '📭' && user.id === message.author.id;
+                 let embedmsgFilter = (reaction, user) => reaction.emoji.name === '🍑' && user.id === message.author.id;
      
-                 let normalmsgFilter = (reaction, user) => reaction.emoji.name === '📧' && user.id === message.author.id;
+                 let normalmsgFilter = (reaction, user) => reaction.emoji.name === '⛽' && user.id === message.author.id;
      
                  let cancelFilter = (reaction, user) => reaction.emoji.name === '❌' && user.id === message.author.id;
      
-                 let onlyroleFilter = (reaction, user) => reaction.emoji.name === '🎖' && user.id === message.author.id;8
+                 let onlyroleFilter = (reaction, user) => reaction.emoji.name === '🍚' && user.id === message.author.id;8
      
-                 let onlineonlyFilter = (reaction, user) => reaction.emoji.name === '🔵' && user.id === message.author.id;8
+                 let onlineonlyFilter = (reaction, user) => reaction.emoji.name === '🐰' && user.id === message.author.id;8
      
-                 let embedonlineonlyFilter = (reaction, user) => reaction.emoji.name === '🔷' && user.id === message.author.id;8
+                 let embedonlineonlyFilter = (reaction, user) => reaction.emoji.name === '🎁' && user.id === message.author.id;8
      
-                 let embedonlyroleFilter = (reaction, user) => reaction.emoji.name === '🏅' && user.id === message.author.id;8
+                 let embedonlyroleFilter = (reaction, user) => reaction.emoji.name === '💎' && user.id === message.author.id;8
      
                  let embedmsg = msg.createReactionCollector(embedmsgFilter, { time: 0 });
      
