@@ -102,7 +102,7 @@ let filter = m => m.author.id === message.author.id;
                  errors: ['time']
                })
                .then(collected => {
-                   collected.first().delete();
+                   collected.first();
                    msge = collected.first().content;
                    msg.edit('✅ **| هل تريد ارسال منشن مع هذه الرسالة  ? نعم او لا **').then(msg => {
                      message.channel.awaitMessages(filter, {
@@ -161,7 +161,7 @@ let filter = m => m.author.id === message.author.id;
               errors: ['time']
             })
             .then(collected => {
-                collected.first().delete();
+                collected.first();
                 msge = collected.first().content;
                 msg.edit('✅ **| هل تريد ارسال منشن مع هذه الرسالة  ? نعم او لا **').then(msg => {
                   message.channel.awaitMessages(filter, {
@@ -203,7 +203,7 @@ let filter = m => m.author.id === message.author.id;
                errors: ['time']
              })
              .then(collected => {
-                 collected.first().delete();
+                 collected.first();
                  msge = collected.first().content;
                  msg.edit('✅ **| هل تريد ارسال منشن مع هذه الرسالة  ? نعم او لا **').then(msg => {
                    message.channel.awaitMessages(filter, {
@@ -266,7 +266,7 @@ let filter = m => m.author.id === message.author.id;
                errors: ['time']
              })
              .then(collected => {
-                 collected.first().delete();
+                 collected.first();
                  msge = collected.first().content;
                  msg.edit('✅ **| هل تريد ارسال منشن مع الرسالة ؟ نعم او لا **').then(msg => {
                    message.channel.awaitMessages(filter, {
@@ -310,7 +310,7 @@ let filter = m => m.author.id === message.author.id;
              })
      
              .then(collected => {
-                 collected.first().delete();
+                 collected.first();
                  msge = collected.first().content;
                      msg.edit('✅ **| الأن الرجاء كتابة اسم الرول المراد ارسال الرسالة اليه**').then(msg => {
                      message.channel.awaitMessages(filter, {
@@ -320,7 +320,7 @@ let filter = m => m.author.id === message.author.id;
                        })
              
              .then(collected => {
-                 collected.first().delete();
+                 collected.first();
                  role = collected.first().content;
                      let rolecheak = message.guild.roles.find('name', `${role}`)
                  msg.edit('✅ **| هل تريد ارسال منشن مع هذه الرسالة  ? نعم او لا  **').then(msg => {
@@ -371,7 +371,7 @@ let filter = m => m.author.id === message.author.id;
              })
      
              .then(collected => {
-                 collected.first().delete();
+                 collected.first();
                  msge = collected.first().content;
                      msg.edit('✅ **| الان الرجاء كتابة اسم الرول المراد ارسال الرسالة اليه**').then(msg => {
                      message.channel.awaitMessages(filter, {
@@ -381,7 +381,7 @@ let filter = m => m.author.id === message.author.id;
                        })
              
              .then(collected => {
-                 collected.first().delete();
+                 collected.first();
                  role = collected.first().content;
                      let rolecheak = message.guild.roles.find('name', `${role}`)
                  msg.edit('✅ **| هل تريد ارسال منشن مع هذه الرسالة  ? نعم او لا **').then(msg => {
