@@ -17,7 +17,7 @@ const prefix = '+'
     client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setStatus("dnd");
-    client.user.setActivity("lost angel ",{type: 'WATCHING'});
+    client.user.setActivity("The Attack of Giants",{type: 'WATCHING'});
     
 });
 /*
