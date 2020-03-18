@@ -20,7 +20,6 @@ const prefix = 'L'
     client.user.setActivity("SILENT ",{type: 'WATCHING'});
     
 });
-/*
 client.on('message', async message => { 
    const adminprefixs = "+"   
  if (!message.content.startsWith(adminprefixs)) return; 
